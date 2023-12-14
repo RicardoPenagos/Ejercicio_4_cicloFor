@@ -34,10 +34,8 @@ function pokedex(){
     }
     for (let i = 0; i < $ejercicio2Input1+1; i++) {
 
-        if(i >= pokemons.length){
-            console.log(arrayPokemon, "y ahora el for " + i)
-            break;
-        } 
+        if(i >= pokemons.length) break;
+    
 
         if(i % 5 == 0){
             arrayPokemon.push(" " + pokemons[i]);
@@ -71,7 +69,7 @@ function ordenarArray(){
         }
 
     }
-    console.log(arrayOrdenado);
+    console.log("Ejercicio 3. Arreglo con números: " + arrayOrdenado);
     $ejercicio3Respuesta.textContent = `El arreglo con solo números sería: ${arrayOrdenado}`;
 }
 
